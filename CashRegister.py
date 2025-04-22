@@ -1,1 +1,4 @@
 #CashRegister
+
+class CashRegister:
+
