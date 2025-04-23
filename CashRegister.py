@@ -1,16 +1,21 @@
 #CashRegister
-dictionary = []
-count = 0
+total = 0
 class CashRegister:
+
+    def __init__(self):
+        self.__item = []
     
-    
-    def purchase_item(self, RetailItem)
-        dictionary += RetailItem
+    def purchase_item(self, item):
+        self._items.append(item)
         
-    def get_total(self)
-        for stuff in dictionary:
-            count += dictionary[stuff]
+    def get_total(self):
+        for item in self._items
+            total += item
             
-    def get_cart
+        return total
+    
+    def show_items(self):
+        return "\n".join(self._items)
+    
             
 
