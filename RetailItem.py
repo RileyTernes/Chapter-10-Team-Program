@@ -26,32 +26,3 @@ class RetailItem:
     def set_price(self):
         price = float(input('What is the price of the item? '))
         self.__price = price
-        
-def main():
-    cont = 'y'
-
-    item_list = []
-    outfile = open('inventory.dat', 'wb')
-
-    while cont == 'y':
-        name = input('What item are you adding? ')
-        item = RetailItem('none', 0, 0)
-        item.set_desc()
-        item.set_count()
-        item.set_price()
-
-        print(f'{item.get_desc()} has {item.get_count()} units in inventory and is priced at ${item.get_price()}.')
-        pickle.dump(item, outfile)
-        cont = input('Would you like to continue? (y/n)')
-    
-    outfile.close()
-def example_read():
-    infile = open('inventory.dat', 'rb')
-    lines = infile.read()
-    lines = pickle.loads(lines)
-    print()
-    item = lines
-    print(item.get_price())
-    infile.close()
-
-main()
