@@ -29,33 +29,17 @@ class RetailItem:
         
 def main():
     cont = 'y'
-<<<<<<< Updated upstream
-=======
+
     item_list = []
     outfile = open('inventory.dat', 'wb')
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+
     while cont == 'y':
         name = input('What item are you adding? ')
         item = RetailItem('none', 0, 0)
         item.set_desc()
         item.set_count()
         item.set_price()
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-        
-      
-=======
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+
         print(f'{item.get_desc()} has {item.get_count()} units in inventory and is priced at ${item.get_price()}.')
         pickle.dump(item, outfile)
         cont = input('Would you like to continue? (y/n)')
@@ -69,11 +53,5 @@ def example_read():
     item = lines
     print(item.get_price())
     infile.close()
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+
 main()
