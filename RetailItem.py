@@ -1,4 +1,5 @@
 #RetailItem
+import pickle
 
 class RetailItem:
     #has attributes; description, count, price
@@ -28,12 +29,33 @@ class RetailItem:
         
 def main():
     cont = 'y'
+<<<<<<< Updated upstream
+=======
+    item_list = []
+    outfile = open('inventory.dat', 'wb')
+>>>>>>> Stashed changes
     while cont == 'y':
         name = input('What item are you adding? ')
         item = RetailItem('none', 0, 0)
         item.set_desc()
         item.set_count()
         item.set_price()
+<<<<<<< Updated upstream
         
       
+=======
+        print(f'{item.get_desc()} has {item.get_count()} units in inventory and is priced at ${item.get_price()}.')
+        pickle.dump(item, outfile)
+        cont = input('Would you like to continue? (y/n)')
+    
+    outfile.close()
+def example_read():
+    infile = open('inventory.dat', 'rb')
+    lines = infile.read()
+    lines = pickle.loads(lines)
+    print()
+    item = lines
+    print(item.get_price())
+    infile.close()
+>>>>>>> Stashed changes
 main()
