@@ -9,17 +9,28 @@ def main():
     #calls the functions or quits
     if choice == 1:
         #do retail
-        pass
+        retail_menu()
     elif choice == 2:
         #do cash register
+        cash_register_system()
     elif choice == 3:
         quit()
-    
+    else:
+        print('Please choose one of the above.')
+        main()
 def menu():
     #prints the menu
     #gets choice
     #validates choice and returns choice
-    
+    print('Welcome to the ACME inventory system.')
+    print('Please choose an option.')
+    print()
+    print('Inventory system(1)')
+    print('Retail system(2)')
+    print('Quit(3)')
+    print()
+    choice = input('What would you like to do? ')
+    return choice
     
 def add_items():
     cont = 'y'
@@ -45,3 +56,14 @@ def example_read():
     item = lines
     print(item.get_price())
     infile.close()
+    
+def retail_menu():
+    print()
+    print('Display cart(1)')
+    print('Display items(2)')
+    print('Purchase cart(3)')
+    print('Empty cart(4)')
+    print('Quit(5)')
+    print()
+    choice = input('What would you like to choose? ')
+main()
