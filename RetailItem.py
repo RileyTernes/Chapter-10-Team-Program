@@ -34,6 +34,9 @@ def main():
     item_list = []
     outfile = open('inventory.dat', 'wb')
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -45,9 +48,12 @@ def main():
         item.set_price()
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         
       
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
         print(f'{item.get_desc()} has {item.get_count()} units in inventory and is priced at ${item.get_price()}.')
@@ -64,6 +70,9 @@ def example_read():
     print(item.get_price())
     infile.close()
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
