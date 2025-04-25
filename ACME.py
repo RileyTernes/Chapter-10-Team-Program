@@ -51,7 +51,7 @@ def add_items():
 def example_read():
     infile = open('inventory.dat', 'rb')
     lines = infile.read()
-    lines = pickle.loads(lines)
+    lines = pickle.load(lines)
     print()
     item = lines
     print(item.get_price())
