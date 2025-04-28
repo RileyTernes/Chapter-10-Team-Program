@@ -66,3 +66,4 @@ def retail_menu():
     print('Quit(5)')
     print()
     choice = input('What would you like to choose? ')
+main()
