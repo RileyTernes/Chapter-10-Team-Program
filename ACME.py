@@ -1,7 +1,7 @@
 #ACME
 import RetailItem
 import CashRegister
-
+import pickle
 def main():
     #calls menu to get choice
     choice = menu()
@@ -51,7 +51,7 @@ def add_items():
 def example_read():
     infile = open('inventory.dat', 'rb')
     lines = infile.read()
-    lines = pickle.load(lines)
+    lines = pickle.loads(lines)
     print()
     item = lines
     print(item.get_price())
@@ -66,4 +66,3 @@ def retail_menu():
     print('Quit(5)')
     print()
     choice = input('What would you like to choose? ')
-main()

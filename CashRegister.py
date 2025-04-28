@@ -2,3 +2,4 @@
 
 class CashRegister:
 
+    pass
